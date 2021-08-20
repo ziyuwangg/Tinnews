@@ -3,7 +3,7 @@ package com.laioffer.tinnews.model;
 import java.util.List;
 import java.util.Objects;
 
-public class NewResponse {
+public class NewsResponse {
     public Integer totalResults;
     public List<Article> articles;
     public String code;
@@ -14,7 +14,7 @@ public class NewResponse {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        NewResponse that = (NewResponse) o;
+        NewsResponse that = (NewsResponse) o;
         return Objects.equals(totalResults, that.totalResults) &&
                 Objects.equals(articles, that.articles) &&
                 Objects.equals(code, that.code) &&
